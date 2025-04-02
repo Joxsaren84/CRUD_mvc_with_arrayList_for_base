@@ -6,8 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.joxaren.springcourse.models.Person;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -44,7 +42,7 @@ public class PersonDAO {
     public void update(int id, Person person){
 
         String sql = "UPDATE person SET name = ?, age = ?, email = ? WHERE id = ?";
-        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail(), person.getId());
+        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail(), id);
 
     }
 

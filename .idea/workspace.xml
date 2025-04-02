@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="DAO with DataBase">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonMapper.java" afterDir="false" />
+    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="DAO with JdbcTemplate">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +183,8 @@
       <workItem from="1742792414768" duration="18000" />
       <workItem from="1742956273854" duration="14113000" />
       <workItem from="1743383437094" duration="3241000" />
-      <workItem from="1743475659620" duration="5131000" />
+      <workItem from="1743475659620" duration="5313000" />
+      <workItem from="1743561237265" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="crud with arrayList">
       <created>1742781918863</created>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1743386939345</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DAO with JdbcTemplate">
+      <created>1743492509375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743492509375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +235,7 @@
     <MESSAGE value="crud with arrayList" />
     <MESSAGE value="add @Valid for field" />
     <MESSAGE value="DAO with DataBase" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO with DataBase" />
+    <MESSAGE value="DAO with JdbcTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO with JdbcTemplate" />
   </component>
 </project>

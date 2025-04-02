@@ -72,7 +72,7 @@ public class PeopleController {
 
         personDAO.update(id, person);
 
-        return "redirect: /people";
+        return "redirect:/people";
 
     }
 
@@ -81,6 +81,6 @@ public class PeopleController {
 
         personDAO.delete(id);
 
-        return "redirect: /people";
+        return "redirect:/people";
     }
 }
