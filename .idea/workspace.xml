@@ -9,15 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="add database.properties for connection">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/controllers/BatchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/controllers/WorkWithBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/action/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/batch/index.html" afterDir="false" />
+    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="add example batch request &amp; work with db page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +44,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/mvcapp/src/main/webapp/WEB-INF/views/action",
-    "spring.configuration.checksum": "88b26586e9f7f463f37b0531068fea7c"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/mvcapp/src/main/webapp/WEB-INF/views/action&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;88b26586e9f7f463f37b0531068fea7c&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\mvcapp\src\main\webapp\WEB-INF\views\action" />
@@ -195,7 +189,8 @@
       <workItem from="1743475659620" duration="5313000" />
       <workItem from="1743561237265" duration="4442000" />
       <workItem from="1743581172654" duration="27000" />
-      <workItem from="1743644178850" duration="7425000" />
+      <workItem from="1743644178850" duration="7726000" />
+      <workItem from="1743734190854" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="crud with arrayList">
       <created>1742781918863</created>
@@ -232,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1743565592237</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add example batch request &amp; work with db page">
+      <created>1743651929840</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743651929840</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +257,7 @@
     <MESSAGE value="DAO with DataBase" />
     <MESSAGE value="DAO with JdbcTemplate" />
     <MESSAGE value="add database.properties for connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database.properties for connection" />
+    <MESSAGE value="add example batch request &amp; work with db page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example batch request &amp; work with db page" />
   </component>
 </project>
