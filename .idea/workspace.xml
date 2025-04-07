@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="add example batch request &amp; work with db page">
+    <list default="true" id="d0d4f0ff-bc49-40b7-b026-e582d8d580d7" name="Changes" comment="add add constraints to db and change save method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/util/PersonValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/springcourse/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +196,8 @@
       <workItem from="1743561237265" duration="4442000" />
       <workItem from="1743581172654" duration="27000" />
       <workItem from="1743644178850" duration="7726000" />
-      <workItem from="1743734190854" duration="1738000" />
+      <workItem from="1743734190854" duration="2064000" />
+      <workItem from="1744001152609" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="crud with arrayList">
       <created>1742781918863</created>
@@ -234,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1743651929840</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add add constraints to db and change save method">
+      <created>1743738414683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743738414683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +272,7 @@
     <MESSAGE value="DAO with JdbcTemplate" />
     <MESSAGE value="add database.properties for connection" />
     <MESSAGE value="add example batch request &amp; work with db page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example batch request &amp; work with db page" />
+    <MESSAGE value="add add constraints to db and change save method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add add constraints to db and change save method" />
   </component>
 </project>

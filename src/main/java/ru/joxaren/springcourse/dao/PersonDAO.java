@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class PersonDAO {
@@ -37,16 +38,23 @@ public class PersonDAO {
 
     }
 
+    public Optional<Person> show(String email){
+
+        String sql = "Select * from person where email = ?";
+        return jdbcTemplate.query(sql, new Object[]{email}, new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
+
+    }
+
     public void save(Person person){
 
-        String sql = "INSERT INTO person (name, age, email) VALUES (?, ?, ?)";
-        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail());
+        String sql = "INSERT INTO person (name, age, email, address) VALUES (?, ?, ?, ?)";
+        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail(), person.getAddress());
     }
 
     public void update(int id, Person person){
 
-        String sql = "UPDATE person SET name = ?, age = ?, email = ? WHERE id = ?";
-        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail(), id);
+        String sql = "UPDATE person SET name = ?, age = ?, email = ?, address = ? WHERE id = ?";
+        jdbcTemplate.update(sql, person.getName(), person.getAge(), person.getEmail(), person.getAddress(), id);
 
     }
 
@@ -79,7 +87,7 @@ public class PersonDAO {
         List<Person> people = new ArrayList<>();
 
         for (int i = 0; i < 1000; i++){
-            people.add(new Person(i, "name" + i, 30, "name" + i + "@gmail.com"));
+            people.add(new Person(i, "name" + i, 30, "name" + i + "@gmail.com", + i + "someaddress"));
         }
 
         return people;
@@ -89,7 +97,7 @@ public class PersonDAO {
         List<Person> people = create1000people();
         long before = System.currentTimeMillis();
 
-        String sql = "INSERT INTO person VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO person VALUES (?, ?, ?, ?, ?)";
 
         jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
             @Override
@@ -98,6 +106,7 @@ public class PersonDAO {
                 preparedStatement.setString(2, people.get(i).getName());
                 preparedStatement.setInt(3, people.get(i).getAge());
                 preparedStatement.setString(4, people.get(i).getEmail());
+                preparedStatement.setString(5, people.get(i).getAddress());
             }
 
             @Override
